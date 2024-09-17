@@ -28,18 +28,8 @@ Partial Class frmMain
         Me.lblUserInfo = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.lblDateTime = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Elipse2 = New Guna.UI2.WinForms.Guna2Elipse(Me.components)
-        Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lblTotalPublicLoan = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lblTotalLoan = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lbCount = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lblTotalSaving = New System.Windows.Forms.Label()
-        Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
-        Me.lbContractCount = New System.Windows.Forms.Label()
-        Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.tsm_exp = New System.Windows.Forms.ToolStripMenuItem()
         Me.สญญาToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ทำสญญาToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -65,14 +55,25 @@ Partial Class frmMain
         Me.นำเขาขอมลToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.จดการสทธToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ออกจากระบบToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
+        Me.Guna2GroupBox4 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.lblTotalPublicLoan = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox5 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.lblTotalLoan = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox1 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.lbCount = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox3 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.lblTotalSaving = New System.Windows.Forms.Label()
+        Me.Guna2GroupBox2 = New Guna.UI2.WinForms.Guna2GroupBox()
+        Me.lbContractCount = New System.Windows.Forms.Label()
+        Me.Guna2ControlBox1 = New Guna.UI2.WinForms.Guna2ControlBox()
+        Me.รายToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Guna2Panel1.SuspendLayout()
+        Me.MenuStrip1.SuspendLayout()
         Me.Guna2GroupBox4.SuspendLayout()
         Me.Guna2GroupBox5.SuspendLayout()
         Me.Guna2GroupBox1.SuspendLayout()
         Me.Guna2GroupBox3.SuspendLayout()
         Me.Guna2GroupBox2.SuspendLayout()
-        Me.Guna2Panel1.SuspendLayout()
-        Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Timer1
@@ -88,9 +89,10 @@ Partial Class frmMain
         '
         Me.lblUserInfo.BackColor = System.Drawing.Color.Transparent
         Me.lblUserInfo.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblUserInfo.Location = New System.Drawing.Point(152, 503)
+        Me.lblUserInfo.Location = New System.Drawing.Point(203, 619)
+        Me.lblUserInfo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lblUserInfo.Name = "lblUserInfo"
-        Me.lblUserInfo.Size = New System.Drawing.Size(131, 23)
+        Me.lblUserInfo.Size = New System.Drawing.Size(158, 28)
         Me.lblUserInfo.TabIndex = 19
         Me.lblUserInfo.Text = "Guna2HtmlLabel1"
         '
@@ -98,9 +100,10 @@ Partial Class frmMain
         '
         Me.lblDateTime.BackColor = System.Drawing.Color.Transparent
         Me.lblDateTime.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblDateTime.Location = New System.Drawing.Point(464, 503)
+        Me.lblDateTime.Location = New System.Drawing.Point(619, 619)
+        Me.lblDateTime.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lblDateTime.Name = "lblDateTime"
-        Me.lblDateTime.Size = New System.Drawing.Size(133, 23)
+        Me.lblDateTime.Size = New System.Drawing.Size(161, 28)
         Me.lblDateTime.TabIndex = 20
         Me.lblDateTime.Text = "Guna2HtmlLabel2"
         '
@@ -109,146 +112,32 @@ Partial Class frmMain
         Me.Guna2Elipse2.BorderRadius = 30
         Me.Guna2Elipse2.TargetControl = Me.Guna2Panel1
         '
-        'Guna2GroupBox4
-        '
-        Me.Guna2GroupBox4.Controls.Add(Me.lblTotalPublicLoan)
-        Me.Guna2GroupBox4.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox4.ForeColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox4.Location = New System.Drawing.Point(468, 196)
-        Me.Guna2GroupBox4.Name = "Guna2GroupBox4"
-        Me.Guna2GroupBox4.Size = New System.Drawing.Size(295, 113)
-        Me.Guna2GroupBox4.TabIndex = 25
-        Me.Guna2GroupBox4.Text = "ยอดรวมบัญชีประชารัฐ"
-        '
-        'lblTotalPublicLoan
-        '
-        Me.lblTotalPublicLoan.AutoSize = True
-        Me.lblTotalPublicLoan.BackColor = System.Drawing.Color.White
-        Me.lblTotalPublicLoan.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalPublicLoan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblTotalPublicLoan.Location = New System.Drawing.Point(26, 58)
-        Me.lblTotalPublicLoan.Name = "lblTotalPublicLoan"
-        Me.lblTotalPublicLoan.Size = New System.Drawing.Size(98, 21)
-        Me.lblTotalPublicLoan.TabIndex = 2
-        Me.lblTotalPublicLoan.Text = "แสดงยอดรวม"
-        '
-        'Guna2GroupBox5
-        '
-        Me.Guna2GroupBox5.Controls.Add(Me.lblTotalLoan)
-        Me.Guna2GroupBox5.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox5.Location = New System.Drawing.Point(162, 196)
-        Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
-        Me.Guna2GroupBox5.Size = New System.Drawing.Size(292, 113)
-        Me.Guna2GroupBox5.TabIndex = 25
-        Me.Guna2GroupBox5.Text = "ยอดรวมบัญชี1"
-        '
-        'lblTotalLoan
-        '
-        Me.lblTotalLoan.AutoSize = True
-        Me.lblTotalLoan.BackColor = System.Drawing.Color.White
-        Me.lblTotalLoan.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalLoan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblTotalLoan.Location = New System.Drawing.Point(40, 58)
-        Me.lblTotalLoan.Name = "lblTotalLoan"
-        Me.lblTotalLoan.Size = New System.Drawing.Size(98, 21)
-        Me.lblTotalLoan.TabIndex = 2
-        Me.lblTotalLoan.Text = "แสดงยอดรวม"
-        '
-        'Guna2GroupBox1
-        '
-        Me.Guna2GroupBox1.Controls.Add(Me.lbCount)
-        Me.Guna2GroupBox1.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox1.Location = New System.Drawing.Point(162, 60)
-        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
-        Me.Guna2GroupBox1.Size = New System.Drawing.Size(295, 113)
-        Me.Guna2GroupBox1.TabIndex = 23
-        Me.Guna2GroupBox1.Text = "จำนวนสมาชิก"
-        '
-        'lbCount
-        '
-        Me.lbCount.AutoSize = True
-        Me.lbCount.BackColor = System.Drawing.Color.White
-        Me.lbCount.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lbCount.Location = New System.Drawing.Point(26, 62)
-        Me.lbCount.Name = "lbCount"
-        Me.lbCount.Size = New System.Drawing.Size(130, 21)
-        Me.lbCount.TabIndex = 1
-        Me.lbCount.Text = "แสดงจำนวนสมาชิก"
-        '
-        'Guna2GroupBox3
-        '
-        Me.Guna2GroupBox3.Controls.Add(Me.lblTotalSaving)
-        Me.Guna2GroupBox3.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox3.Location = New System.Drawing.Point(162, 335)
-        Me.Guna2GroupBox3.Name = "Guna2GroupBox3"
-        Me.Guna2GroupBox3.Size = New System.Drawing.Size(292, 113)
-        Me.Guna2GroupBox3.TabIndex = 24
-        Me.Guna2GroupBox3.Text = "ยอดรวมบัญชีสัจจะ"
-        '
-        'lblTotalSaving
-        '
-        Me.lblTotalSaving.AutoSize = True
-        Me.lblTotalSaving.BackColor = System.Drawing.Color.White
-        Me.lblTotalSaving.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblTotalSaving.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lblTotalSaving.Location = New System.Drawing.Point(26, 58)
-        Me.lblTotalSaving.Name = "lblTotalSaving"
-        Me.lblTotalSaving.Size = New System.Drawing.Size(98, 21)
-        Me.lblTotalSaving.TabIndex = 1
-        Me.lblTotalSaving.Text = "แสดงยอดรวม"
-        '
-        'Guna2GroupBox2
-        '
-        Me.Guna2GroupBox2.BackColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox2.Controls.Add(Me.lbContractCount)
-        Me.Guna2GroupBox2.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2GroupBox2.Location = New System.Drawing.Point(474, 60)
-        Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
-        Me.Guna2GroupBox2.Size = New System.Drawing.Size(289, 113)
-        Me.Guna2GroupBox2.TabIndex = 24
-        Me.Guna2GroupBox2.Text = "จำนวนการทำสัญญา"
-        '
-        'lbContractCount
-        '
-        Me.lbContractCount.AutoSize = True
-        Me.lbContractCount.BackColor = System.Drawing.Color.White
-        Me.lbContractCount.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbContractCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.lbContractCount.Location = New System.Drawing.Point(43, 62)
-        Me.lbContractCount.Name = "lbContractCount"
-        Me.lbContractCount.Size = New System.Drawing.Size(131, 21)
-        Me.lbContractCount.TabIndex = 2
-        Me.lbContractCount.Text = "แสดงจำนวนสัญญา"
-        '
-        'Guna2ControlBox1
-        '
-        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Guna2ControlBox1.BackColor = System.Drawing.Color.Red
-        Me.Guna2ControlBox1.CustomIconSize = 30.0!
-        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.LightGray
-        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Red
-        Me.Guna2ControlBox1.Location = New System.Drawing.Point(730, 12)
-        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
-        Me.Guna2ControlBox1.Size = New System.Drawing.Size(38, 29)
-        Me.Guna2ControlBox1.TabIndex = 5
-        '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.WhiteSmoke
         Me.Guna2Panel1.Controls.Add(Me.MenuStrip1)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(-13, -1)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(-17, -1)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.BorderRadius = 30
         Me.Guna2Panel1.ShadowDecoration.Color = System.Drawing.Color.Gray
         Me.Guna2Panel1.ShadowDecoration.Depth = 20
         Me.Guna2Panel1.ShadowDecoration.Enabled = True
-        Me.Guna2Panel1.Size = New System.Drawing.Size(159, 539)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(212, 663)
         Me.Guna2Panel1.TabIndex = 21
+        '
+        'MenuStrip1
+        '
+        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Left
+        Me.MenuStrip1.Font = New System.Drawing.Font("FC Minimal", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MenuStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsm_exp, Me.tsm_inc, Me.tsm_report, Me.tsm_other, Me.ออกจากระบบToolStripMenuItem})
+        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
+        Me.MenuStrip1.Name = "MenuStrip1"
+        Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
+        Me.MenuStrip1.Size = New System.Drawing.Size(163, 663)
+        Me.MenuStrip1.TabIndex = 0
+        Me.MenuStrip1.Text = "MenuStrip1"
         '
         'tsm_exp
         '
@@ -262,44 +151,44 @@ Partial Class frmMain
         '
         Me.สญญาToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ทำสญญาToolStripMenuItem, Me.แกไขสญญาToolStripMenuItem})
         Me.สญญาToolStripMenuItem1.Name = "สญญาToolStripMenuItem1"
-        Me.สญญาToolStripMenuItem1.Size = New System.Drawing.Size(180, 32)
+        Me.สญญาToolStripMenuItem1.Size = New System.Drawing.Size(223, 38)
         Me.สญญาToolStripMenuItem1.Text = "สัญญา"
         '
         'ทำสญญาToolStripMenuItem
         '
         Me.ทำสญญาToolStripMenuItem.Name = "ทำสญญาToolStripMenuItem"
-        Me.ทำสญญาToolStripMenuItem.Size = New System.Drawing.Size(185, 32)
+        Me.ทำสญญาToolStripMenuItem.Size = New System.Drawing.Size(233, 38)
         Me.ทำสญญาToolStripMenuItem.Text = "ทำสัญญา"
         '
         'แกไขสญญาToolStripMenuItem
         '
         Me.แกไขสญญาToolStripMenuItem.Name = "แกไขสญญาToolStripMenuItem"
-        Me.แกไขสญญาToolStripMenuItem.Size = New System.Drawing.Size(185, 32)
+        Me.แกไขสญญาToolStripMenuItem.Size = New System.Drawing.Size(233, 38)
         Me.แกไขสญญาToolStripMenuItem.Text = "แก้ไขสัญญา"
         '
         'คาใชจายToolStripMenuItem
         '
         Me.คาใชจายToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.บนทกคาใชจายToolStripMenuItem, Me.แกToolStripMenuItem})
         Me.คาใชจายToolStripMenuItem.Name = "คาใชจายToolStripMenuItem"
-        Me.คาใชจายToolStripMenuItem.Size = New System.Drawing.Size(180, 32)
+        Me.คาใชจายToolStripMenuItem.Size = New System.Drawing.Size(223, 38)
         Me.คาใชจายToolStripMenuItem.Text = "ค่าใช้จ่าย"
         '
         'บนทกคาใชจายToolStripMenuItem
         '
         Me.บนทกคาใชจายToolStripMenuItem.Name = "บนทกคาใชจายToolStripMenuItem"
-        Me.บนทกคาใชจายToolStripMenuItem.Size = New System.Drawing.Size(210, 32)
+        Me.บนทกคาใชจายToolStripMenuItem.Size = New System.Drawing.Size(261, 38)
         Me.บนทกคาใชจายToolStripMenuItem.Text = "บันทึกค่าใช้จ่าย"
         '
         'แกToolStripMenuItem
         '
         Me.แกToolStripMenuItem.Name = "แกToolStripMenuItem"
-        Me.แกToolStripMenuItem.Size = New System.Drawing.Size(210, 32)
+        Me.แกToolStripMenuItem.Size = New System.Drawing.Size(261, 38)
         Me.แกToolStripMenuItem.Text = "แก้ไขค่าใช้จ่าย"
         '
         'ตารางเงนกToolStripMenuItem
         '
         Me.ตารางเงนกToolStripMenuItem.Name = "ตารางเงนกToolStripMenuItem"
-        Me.ตารางเงนกToolStripMenuItem.Size = New System.Drawing.Size(180, 32)
+        Me.ตารางเงนกToolStripMenuItem.Size = New System.Drawing.Size(223, 38)
         Me.ตารางเงนกToolStripMenuItem.Text = "ตารางเงินกู้"
         '
         'tsm_inc
@@ -313,25 +202,25 @@ Partial Class frmMain
         'บนทกรายรบToolStripMenuItem
         '
         Me.บนทกรายรบToolStripMenuItem.Name = "บนทกรายรบToolStripMenuItem"
-        Me.บนทกรายรบToolStripMenuItem.Size = New System.Drawing.Size(192, 32)
+        Me.บนทกรายรบToolStripMenuItem.Size = New System.Drawing.Size(239, 38)
         Me.บนทกรายรบToolStripMenuItem.Text = "บันทึกรายรับ"
         '
         'แกไขรายรบToolStripMenuItem
         '
         Me.แกไขรายรบToolStripMenuItem.Name = "แกไขรายรบToolStripMenuItem"
-        Me.แกไขรายรบToolStripMenuItem.Size = New System.Drawing.Size(192, 32)
+        Me.แกไขรายรบToolStripMenuItem.Size = New System.Drawing.Size(239, 38)
         Me.แกไขรายรบToolStripMenuItem.Text = "แก้ไขรายรับ"
         '
         'รายรบToolStripMenuItem
         '
         Me.รายรบToolStripMenuItem.Name = "รายรบToolStripMenuItem"
-        Me.รายรบToolStripMenuItem.Size = New System.Drawing.Size(192, 32)
+        Me.รายรบToolStripMenuItem.Size = New System.Drawing.Size(239, 38)
         Me.รายรบToolStripMenuItem.Text = "รายรับ"
         '
         'tsm_report
         '
         Me.tsm_report.AutoSize = False
-        Me.tsm_report.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.รายงานสญญาเงนกToolStripMenuItem})
+        Me.tsm_report.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.รายงานสญญาเงนกToolStripMenuItem, Me.รายToolStripMenuItem})
         Me.tsm_report.Name = "tsm_report"
         Me.tsm_report.Size = New System.Drawing.Size(150, 50)
         Me.tsm_report.Text = "รายงาน"
@@ -339,7 +228,7 @@ Partial Class frmMain
         'รายงานสญญาเงนกToolStripMenuItem
         '
         Me.รายงานสญญาเงนกToolStripMenuItem.Name = "รายงานสญญาเงนกToolStripMenuItem"
-        Me.รายงานสญญาเงนกToolStripMenuItem.Size = New System.Drawing.Size(251, 32)
+        Me.รายงานสญญาเงนกToolStripMenuItem.Size = New System.Drawing.Size(313, 38)
         Me.รายงานสญญาเงนกToolStripMenuItem.Text = "รายงานสัญญาเงินกู้"
         '
         'tsm_other
@@ -354,56 +243,56 @@ Partial Class frmMain
         '
         Me.สมาชกToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.จดการสมาชกToolStripMenuItem, Me.ดสมาชกToolStripMenuItem, Me.สมาชกลาออกToolStripMenuItem})
         Me.สมาชกToolStripMenuItem.Name = "สมาชกToolStripMenuItem"
-        Me.สมาชกToolStripMenuItem.Size = New System.Drawing.Size(179, 32)
+        Me.สมาชกToolStripMenuItem.Size = New System.Drawing.Size(224, 38)
         Me.สมาชกToolStripMenuItem.Text = "สมาชิก"
         '
         'จดการสมาชกToolStripMenuItem
         '
         Me.จดการสมาชกToolStripMenuItem.Name = "จดการสมาชกToolStripMenuItem"
-        Me.จดการสมาชกToolStripMenuItem.Size = New System.Drawing.Size(203, 32)
+        Me.จดการสมาชกToolStripMenuItem.Size = New System.Drawing.Size(253, 38)
         Me.จดการสมาชกToolStripMenuItem.Text = "จัดการสมาชิก"
         '
         'ดสมาชกToolStripMenuItem
         '
         Me.ดสมาชกToolStripMenuItem.Name = "ดสมาชกToolStripMenuItem"
-        Me.ดสมาชกToolStripMenuItem.Size = New System.Drawing.Size(203, 32)
+        Me.ดสมาชกToolStripMenuItem.Size = New System.Drawing.Size(253, 38)
         Me.ดสมาชกToolStripMenuItem.Text = "เรียกดูสมาชิก"
         '
         'สมาชกลาออกToolStripMenuItem
         '
         Me.สมาชกลาออกToolStripMenuItem.Name = "สมาชกลาออกToolStripMenuItem"
-        Me.สมาชกลาออกToolStripMenuItem.Size = New System.Drawing.Size(203, 32)
+        Me.สมาชกลาออกToolStripMenuItem.Size = New System.Drawing.Size(253, 38)
         Me.สมาชกลาออกToolStripMenuItem.Text = "สมาชิกลาออก"
         '
         'อานบตรToolStripMenuItem
         '
         Me.อานบตรToolStripMenuItem.Name = "อานบตรToolStripMenuItem"
-        Me.อานบตรToolStripMenuItem.Size = New System.Drawing.Size(179, 32)
+        Me.อานบตรToolStripMenuItem.Size = New System.Drawing.Size(224, 38)
         Me.อานบตรToolStripMenuItem.Text = "อ่านบัตร"
         '
         'ขอมลToolStripMenuItem
         '
         Me.ขอมลToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.สำรองขอมลToolStripMenuItem, Me.นำเขาขอมลToolStripMenuItem})
         Me.ขอมลToolStripMenuItem.Name = "ขอมลToolStripMenuItem"
-        Me.ขอมลToolStripMenuItem.Size = New System.Drawing.Size(179, 32)
+        Me.ขอมลToolStripMenuItem.Size = New System.Drawing.Size(224, 38)
         Me.ขอมลToolStripMenuItem.Text = "ข้อมูล"
         '
         'สำรองขอมลToolStripMenuItem
         '
         Me.สำรองขอมลToolStripMenuItem.Name = "สำรองขอมลToolStripMenuItem"
-        Me.สำรองขอมลToolStripMenuItem.Size = New System.Drawing.Size(190, 32)
+        Me.สำรองขอมลToolStripMenuItem.Size = New System.Drawing.Size(237, 38)
         Me.สำรองขอมลToolStripMenuItem.Text = "สำรองข้อมูล"
         '
         'นำเขาขอมลToolStripMenuItem
         '
         Me.นำเขาขอมลToolStripMenuItem.Name = "นำเขาขอมลToolStripMenuItem"
-        Me.นำเขาขอมลToolStripMenuItem.Size = New System.Drawing.Size(190, 32)
+        Me.นำเขาขอมลToolStripMenuItem.Size = New System.Drawing.Size(237, 38)
         Me.นำเขาขอมลToolStripMenuItem.Text = "นำเข้าข้อมูล"
         '
         'จดการสทธToolStripMenuItem
         '
         Me.จดการสทธToolStripMenuItem.Name = "จดการสทธToolStripMenuItem"
-        Me.จดการสทธToolStripMenuItem.Size = New System.Drawing.Size(179, 32)
+        Me.จดการสทธToolStripMenuItem.Size = New System.Drawing.Size(224, 38)
         Me.จดการสทธToolStripMenuItem.Text = "จัดการสิทธิ"
         '
         'ออกจากระบบToolStripMenuItem
@@ -416,24 +305,157 @@ Partial Class frmMain
         Me.ออกจากระบบToolStripMenuItem.Size = New System.Drawing.Size(150, 50)
         Me.ออกจากระบบToolStripMenuItem.Text = "ออกจากระบบ"
         '
-        'MenuStrip1
+        'Guna2GroupBox4
         '
-        Me.MenuStrip1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.MenuStrip1.Font = New System.Drawing.Font("FC Minimal", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.tsm_exp, Me.tsm_inc, Me.tsm_report, Me.tsm_other, Me.ออกจากระบบToolStripMenuItem})
-        Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.MenuStrip1.Size = New System.Drawing.Size(161, 539)
-        Me.MenuStrip1.TabIndex = 0
-        Me.MenuStrip1.Text = "MenuStrip1"
+        Me.Guna2GroupBox4.Controls.Add(Me.lblTotalPublicLoan)
+        Me.Guna2GroupBox4.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GroupBox4.ForeColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox4.Location = New System.Drawing.Point(624, 241)
+        Me.Guna2GroupBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2GroupBox4.Name = "Guna2GroupBox4"
+        Me.Guna2GroupBox4.Size = New System.Drawing.Size(393, 139)
+        Me.Guna2GroupBox4.TabIndex = 25
+        Me.Guna2GroupBox4.Text = "ยอดรวมบัญชีประชารัฐ"
+        '
+        'lblTotalPublicLoan
+        '
+        Me.lblTotalPublicLoan.AutoSize = True
+        Me.lblTotalPublicLoan.BackColor = System.Drawing.Color.White
+        Me.lblTotalPublicLoan.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalPublicLoan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblTotalPublicLoan.Location = New System.Drawing.Point(35, 71)
+        Me.lblTotalPublicLoan.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalPublicLoan.Name = "lblTotalPublicLoan"
+        Me.lblTotalPublicLoan.Size = New System.Drawing.Size(126, 27)
+        Me.lblTotalPublicLoan.TabIndex = 2
+        Me.lblTotalPublicLoan.Text = "แสดงยอดรวม"
+        '
+        'Guna2GroupBox5
+        '
+        Me.Guna2GroupBox5.Controls.Add(Me.lblTotalLoan)
+        Me.Guna2GroupBox5.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GroupBox5.ForeColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox5.Location = New System.Drawing.Point(216, 241)
+        Me.Guna2GroupBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2GroupBox5.Name = "Guna2GroupBox5"
+        Me.Guna2GroupBox5.Size = New System.Drawing.Size(389, 139)
+        Me.Guna2GroupBox5.TabIndex = 25
+        Me.Guna2GroupBox5.Text = "ยอดรวมบัญชี1"
+        '
+        'lblTotalLoan
+        '
+        Me.lblTotalLoan.AutoSize = True
+        Me.lblTotalLoan.BackColor = System.Drawing.Color.White
+        Me.lblTotalLoan.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalLoan.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblTotalLoan.Location = New System.Drawing.Point(53, 71)
+        Me.lblTotalLoan.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalLoan.Name = "lblTotalLoan"
+        Me.lblTotalLoan.Size = New System.Drawing.Size(126, 27)
+        Me.lblTotalLoan.TabIndex = 2
+        Me.lblTotalLoan.Text = "แสดงยอดรวม"
+        '
+        'Guna2GroupBox1
+        '
+        Me.Guna2GroupBox1.Controls.Add(Me.lbCount)
+        Me.Guna2GroupBox1.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GroupBox1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox1.Location = New System.Drawing.Point(216, 74)
+        Me.Guna2GroupBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2GroupBox1.Name = "Guna2GroupBox1"
+        Me.Guna2GroupBox1.Size = New System.Drawing.Size(393, 139)
+        Me.Guna2GroupBox1.TabIndex = 23
+        Me.Guna2GroupBox1.Text = "จำนวนสมาชิก"
+        '
+        'lbCount
+        '
+        Me.lbCount.AutoSize = True
+        Me.lbCount.BackColor = System.Drawing.Color.White
+        Me.lbCount.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lbCount.Location = New System.Drawing.Point(35, 76)
+        Me.lbCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbCount.Name = "lbCount"
+        Me.lbCount.Size = New System.Drawing.Size(167, 27)
+        Me.lbCount.TabIndex = 1
+        Me.lbCount.Text = "แสดงจำนวนสมาชิก"
+        '
+        'Guna2GroupBox3
+        '
+        Me.Guna2GroupBox3.Controls.Add(Me.lblTotalSaving)
+        Me.Guna2GroupBox3.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GroupBox3.ForeColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox3.Location = New System.Drawing.Point(216, 412)
+        Me.Guna2GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2GroupBox3.Name = "Guna2GroupBox3"
+        Me.Guna2GroupBox3.Size = New System.Drawing.Size(389, 139)
+        Me.Guna2GroupBox3.TabIndex = 24
+        Me.Guna2GroupBox3.Text = "ยอดรวมบัญชีสัจจะ"
+        '
+        'lblTotalSaving
+        '
+        Me.lblTotalSaving.AutoSize = True
+        Me.lblTotalSaving.BackColor = System.Drawing.Color.White
+        Me.lblTotalSaving.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblTotalSaving.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblTotalSaving.Location = New System.Drawing.Point(35, 71)
+        Me.lblTotalSaving.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTotalSaving.Name = "lblTotalSaving"
+        Me.lblTotalSaving.Size = New System.Drawing.Size(126, 27)
+        Me.lblTotalSaving.TabIndex = 1
+        Me.lblTotalSaving.Text = "แสดงยอดรวม"
+        '
+        'Guna2GroupBox2
+        '
+        Me.Guna2GroupBox2.BackColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox2.Controls.Add(Me.lbContractCount)
+        Me.Guna2GroupBox2.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2GroupBox2.ForeColor = System.Drawing.Color.Black
+        Me.Guna2GroupBox2.Location = New System.Drawing.Point(632, 74)
+        Me.Guna2GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2GroupBox2.Name = "Guna2GroupBox2"
+        Me.Guna2GroupBox2.Size = New System.Drawing.Size(385, 139)
+        Me.Guna2GroupBox2.TabIndex = 24
+        Me.Guna2GroupBox2.Text = "จำนวนการทำสัญญา"
+        '
+        'lbContractCount
+        '
+        Me.lbContractCount.AutoSize = True
+        Me.lbContractCount.BackColor = System.Drawing.Color.White
+        Me.lbContractCount.Font = New System.Drawing.Font("FC Minimal", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbContractCount.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lbContractCount.Location = New System.Drawing.Point(57, 76)
+        Me.lbContractCount.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbContractCount.Name = "lbContractCount"
+        Me.lbContractCount.Size = New System.Drawing.Size(170, 27)
+        Me.lbContractCount.TabIndex = 2
+        Me.lbContractCount.Text = "แสดงจำนวนสัญญา"
+        '
+        'Guna2ControlBox1
+        '
+        Me.Guna2ControlBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Guna2ControlBox1.BackColor = System.Drawing.Color.Red
+        Me.Guna2ControlBox1.CustomIconSize = 30.0!
+        Me.Guna2ControlBox1.FillColor = System.Drawing.Color.LightGray
+        Me.Guna2ControlBox1.IconColor = System.Drawing.Color.Red
+        Me.Guna2ControlBox1.Location = New System.Drawing.Point(973, 15)
+        Me.Guna2ControlBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2ControlBox1.Name = "Guna2ControlBox1"
+        Me.Guna2ControlBox1.Size = New System.Drawing.Size(51, 36)
+        Me.Guna2ControlBox1.TabIndex = 5
+        '
+        'รายToolStripMenuItem
+        '
+        Me.รายToolStripMenuItem.Name = "รายToolStripMenuItem"
+        Me.รายToolStripMenuItem.Size = New System.Drawing.Size(326, 38)
+        Me.รายToolStripMenuItem.Text = "รายงานดอกเบี้ยสัจจะ"
         '
         'frmMain
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(780, 538)
+        Me.ClientSize = New System.Drawing.Size(1040, 662)
         Me.Controls.Add(Me.lblUserInfo)
         Me.Controls.Add(Me.Guna2ControlBox1)
         Me.Controls.Add(Me.lblDateTime)
@@ -444,9 +466,14 @@ Partial Class frmMain
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Name = "frmMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "y"
+        Me.Guna2Panel1.ResumeLayout(False)
+        Me.Guna2Panel1.PerformLayout()
+        Me.MenuStrip1.ResumeLayout(False)
+        Me.MenuStrip1.PerformLayout()
         Me.Guna2GroupBox4.ResumeLayout(False)
         Me.Guna2GroupBox4.PerformLayout()
         Me.Guna2GroupBox5.ResumeLayout(False)
@@ -457,10 +484,6 @@ Partial Class frmMain
         Me.Guna2GroupBox3.PerformLayout()
         Me.Guna2GroupBox2.ResumeLayout(False)
         Me.Guna2GroupBox2.PerformLayout()
-        Me.Guna2Panel1.ResumeLayout(False)
-        Me.Guna2Panel1.PerformLayout()
-        Me.MenuStrip1.ResumeLayout(False)
-        Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -508,4 +531,5 @@ Partial Class frmMain
     Friend WithEvents นำเขาขอมลToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents จดการสทธToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ออกจากระบบToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents รายToolStripMenuItem As ToolStripMenuItem
 End Class

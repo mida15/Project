@@ -237,6 +237,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="db_banmai1DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_banmai1DataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
     </Compile>
@@ -282,6 +287,12 @@
       <DependentUpon>frmImport.vb</DependentUpon>
     </Compile>
     <Compile Include="Other\frmImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other\frmInvb.Designer.vb">
+      <DependentUpon>frmInvb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Other\frmInvb.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Other\frmManageMembers.Designer.vb">
@@ -332,12 +343,6 @@
     <Compile Include="Page1\frmEditExpense.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Page1\frmExpense.Designer.vb">
-      <DependentUpon>frmExpense.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Page1\frmExpense.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Page1\frmSearch.Designer.vb">
       <DependentUpon>frmSearch.vb</DependentUpon>
     </Compile>
@@ -360,12 +365,6 @@
       <DependentUpon>frmIncomePayment.vb</DependentUpon>
     </Compile>
     <Compile Include="Page2\frmIncomePayment.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reportex.Designer.vb">
-      <DependentUpon>reportex.vb</DependentUpon>
-    </Compile>
-    <Compile Include="reportex.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -391,6 +390,9 @@
     <EmbeddedResource Include="Other\frmImport.resx">
       <DependentUpon>frmImport.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Other\frmInvb.resx">
+      <DependentUpon>frmInvb.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Other\frmManageMembers.resx">
       <DependentUpon>frmManageMembers.vb</DependentUpon>
     </EmbeddedResource>
@@ -403,6 +405,7 @@
     <EmbeddedResource Include="Other\frmViewmember.resx">
       <DependentUpon>frmViewmember.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Other\ReportInterest.rdlc" />
     <EmbeddedResource Include="Page1\frmBrrow.resx">
       <DependentUpon>frmBrrow.vb</DependentUpon>
     </EmbeddedResource>
@@ -415,9 +418,6 @@
     <EmbeddedResource Include="Page1\frmEditExpense.resx">
       <DependentUpon>frmEditExpense.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Page1\frmExpense.resx">
-      <DependentUpon>frmExpense.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Page1\frmSearch.resx">
       <DependentUpon>frmSearch.vb</DependentUpon>
     </EmbeddedResource>
@@ -429,9 +429,6 @@
       <DependentUpon>frmIncomePayment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExpenseReport.rdlc.rdlc" />
-    <EmbeddedResource Include="reportex.resx">
-      <DependentUpon>reportex.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="report\GuarantorReport.rdlc" />
     <EmbeddedResource Include="report\GuarantorReport1.rdlc" />
     <EmbeddedResource Include="report\LoanReport1.rdlc" />
@@ -447,6 +444,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_banmai1DataSet.xsc">
+      <DependentUpon>db_banmai1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_banmai1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_banmai1DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_banmai1DataSet.xss">
+      <DependentUpon>db_banmai1DataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -472,6 +480,11 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db_banmai1.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

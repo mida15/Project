@@ -1,8 +1,6 @@
 ﻿Imports System.Data.OleDb
-
 Imports System.Globalization
-
-
+Imports ThaiNationalIDCard ' Import the library for reading Thai ID cards
 
 Public Class frmManageMembers
     Dim conn As New OleDbConnection("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & Application.StartupPath & "\db_banmai1.accdb")
@@ -11,11 +9,52 @@ Public Class frmManageMembers
     Dim strSQL As String ' SQL Query String
     Dim isEditing As Boolean = False ' State for add/edit mode
 
+    ' Controls Declaration
+    Private WithEvents btnReadCard As New Button With {.Text = "Read Card", .Location = New Point(10, 10)} ' Adjust location as needed
+    Private txtAge As New TextBox
+
     Private Sub frmManageMembers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Add button to the form
+        Me.Controls.Add(btnReadCard)
+
         ConfigureDataGridView()
         ClearAllData()
         Loadinfo()
         Auto_id()
+    End Sub
+
+    Private Sub btnReadCard_Click(sender As Object, e As EventArgs) Handles btnReadCard.Click
+        MessageBox.Show("Starting to read the card...", "Debug", MessageBoxButtons.OK, MessageBoxIcon.Information) ' เพิ่มข้อความเพื่อดูว่าฟังก์ชันเริ่มทำงานหรือไม่
+        Try
+            ' Create a new instance of the ThaiIDCard class
+            Dim ID As New ThaiIDCard
+            Dim Personal As Personal = ID.readAllPhoto
+
+            If Personal IsNot Nothing Then
+                ' Populate the fields with data from the ID card
+                Auto_id() ' Automatically generate a new ID
+                cmbGender.SelectedItem = Personal.Th_Prefix
+                txtName.Text = Personal.Th_Firstname & " " & Personal.Th_Lastname
+                txtThaiid.Text = Personal.Citizenid
+                dtpBirth.Value = Personal.Birthday
+
+                ' Automatically calculate and display the age
+                txtAge.Text = CalculateAge(dtpBirth.Value.ToString("dd/MM/yyyy")).ToString()
+
+                txtAddress.Text = Personal.addrHouseNo & " " & Personal.addrVillageNo & " " & Personal.addrLane & " " &
+                                  Personal.addrRoad & " " & Personal.addrTambol & " " & Personal.addrAmphur & " " &
+                                  Personal.addrProvince
+
+                ' Set nationality
+                cmbNational.SelectedItem = "ไทย" ' Assuming "ไทย" is the default nationality
+                MessageBox.Show("Card data read successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information) ' แสดงข้อความเมื่ออ่านบัตรสำเร็จ
+            Else
+                MessageBox.Show("Unable to read card data.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show("Error reading card data: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
     End Sub
 
     Sub ConfigureDataGridView()
@@ -91,7 +130,7 @@ Public Class frmManageMembers
         txtBeginning.Clear()
         txtAccountname.Clear()
         txtAccountnum.Clear()
-
+        txtAge.Clear() ' Clear the age field
 
         cmbGender.Items.Clear()
         cmbGender.Items.Add("เลือกคำนำหน้า")
@@ -219,7 +258,6 @@ Public Class frmManageMembers
                 dtpBirth.Value = DateTime.Now
             End If
 
-
             txtThaiid.Text = If(row.Cells("m_thaiid").Value IsNot Nothing, row.Cells("m_thaiid").Value.ToString(), String.Empty)
             txtJob.Text = If(row.Cells("m_job").Value IsNot Nothing, row.Cells("m_job").Value.ToString(), String.Empty)
             txtAddress.Text = If(row.Cells("m_address").Value IsNot Nothing, row.Cells("m_address").Value.ToString(), String.Empty)
@@ -248,7 +286,6 @@ Public Class frmManageMembers
             Return 0 ' หากไม่สามารถแปลงวันเกิดได้ คืนค่า 0
         End If
     End Function
-
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         ClearAllData()
@@ -281,5 +318,4 @@ Public Class frmManageMembers
             End Try
         End If
     End Sub
-
 End Class

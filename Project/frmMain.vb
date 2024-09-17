@@ -267,10 +267,9 @@ Public Class frmMain
         frm.ShowDialog()
     End Sub
 
-    Private Sub บนทกคาใชจายToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles บนทกคาใชจายToolStripMenuItem.Click
-        Dim frm As New frmExpense
+    Private Sub รายToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles รายToolStripMenuItem.Click
+        Dim frm As New frmInvb
         AddHandler frm.FormClosed, AddressOf RefreshMainForm
         frm.ShowDialog()
     End Sub
-
 End Class

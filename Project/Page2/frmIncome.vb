@@ -104,6 +104,8 @@ Public Class frmIncome
                 ' เพิ่มรายการใหม่
                 incomeTypeColumn.Items.Add("เงินต้น")
                 incomeTypeColumn.Items.Add("ดอกเบี้ย")
+                incomeTypeColumn.Items.Add("เงินฝากสัจจะ")
+                incomeTypeColumn.Items.Add("ค่าปรับ")
                 incomeTypeColumn.Items.Add("เงินสำรอง")
                 incomeTypeColumn.Items.Add("เงินหุ้น")
                 incomeTypeColumn.Items.Add("ค่าธรรมเนียม")
